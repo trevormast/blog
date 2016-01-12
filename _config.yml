@@ -1,0 +1,9 @@
+title: My new Jekyll site
+email: your-email@domain.com
+description: This is my awesome site powered by Jekyll!
+baseurl: ''
+url: trevormast.github.io
+twitter_username: jekyllrb
+github_username: trevormast
+markdown: kramdown
+theme: clean-jekyll
