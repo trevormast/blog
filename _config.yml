@@ -1,9 +1,9 @@
-title: My new Jekyll site
-email: your-email@domain.com
-description: This is my awesome site powered by Jekyll!
+title: Jekyll.Pizza blog
+email: jekylldotpizza@gmail.com
+description: A blog documenting the creation of Jekyll.Pizza, a Jekyll blog generator
 baseurl: ''
 url: trevormast.github.io
-twitter_username: jekyllrb
+twitter_username: jekyllpizza
 github_username: trevormast
 markdown: kramdown
 theme: clean-jekyll
