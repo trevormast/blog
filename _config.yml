@@ -1,9 +1,9 @@
-title: My new Jekyll site
-email: your-email@domain.com
-description: This is my awesome site powered by Jekyll!
+title: Trevor Mast
+email: trevormast@gmail.com
+description: ''
 baseurl: ''
 url: trevormast.github.io
-twitter_username: jekyllrb
+twitter_username: jekyllpizza
 github_username: trevormast
 markdown: kramdown
 theme: clean-jekyll
