@@ -208,7 +208,11 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin: $spacing-unit * 4;
+    margin-top: $spacing-unit;
+    @include media-query($on-palm) {
+        margin: $spacing-unit;
+    }
 
     h2 {
         font-size: 32px;
