@@ -78,7 +78,7 @@ javascript:
 Now our javascript has access to a url that will return JSON about the proper Sidekiq worker. We can then start polling for changes:
 
 {% highlight slim %}
-#./views/create.slim
+/create.slim
 
 javascript:
 
@@ -92,17 +92,17 @@ javascript:
 
         document.getElementById("blog-status").innerHTML = status;
 
-        #stops polling when status is complete
+        /stops polling when status is complete/
         if(data['worker_status'] === 'complete'){
           document.getElementById("blog-status").innerHTML = "Complete!"
           clearInterval(intervalID);
         }
     }, dataType: "json"});
-  }, 1000); #polls every 1000ms or 1s
+  }, 1000); /polls every 1000ms or 1s
 
 {% endhighlight %}
 
-The above code uses an AJAX call to asynchronously query our JSON route and update the HTML on the page.  At this stage, all it does is update an h1 tag with the status of the worker (ie: 'waiting', 'working', 'failure', 'complete').  This doesn't tell the user much information.  Idealy, we would provide the user with an idea of how long the process will take. Again, SidekiqStatus makes it easy for us with the 'at' method.
+The above code uses an AJAX call to asynchronously query our JSON route and update the HTML on the page.  At this stage, all it does is update an h1 tag with the status of the worker (ie: 'waiting', 'working', 'failure', 'complete').  This doesn't tell the user much information.  Ideally, we would provide the user with an idea of how long the process will take. Again, SidekiqStatus makes it easy for us with the 'at' method.
 
 {% highlight ruby %}
 class MyWorker
@@ -160,7 +160,7 @@ First we'll implement a simple progress bar:
 }
 {% endhighlight %}
 
-Then we'll ensure our JSON route will return the information we need:
+Then we'll ensure our JSON route returns the information we need:
 
 {% highlight ruby%}
   ...
